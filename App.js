@@ -16,6 +16,7 @@ export default function App() {
         <Drawer.Navigator
           initialRouteName="Main"
           screenOptions={({ navigation }) => ({
+            drawerType: 'slide',
             headerStyle: styles.header,
             headerTintColor: '#183153',
             headerTitleStyle: styles.headerTitle,

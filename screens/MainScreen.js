@@ -23,7 +23,9 @@ export default function MainScreen() {
   const [hours, setHours] = useState('');
   const [hourlyRate, setHourlyRate] = useState('');
   const [taxRate, setTaxRate] = useState('');
-  const [results, setResults] = useState(null);
+  const [results, setResults] = useState(
+    /** @type {{ regularPay: number, overtimePay: number, totalPay: number, tax: number } | null} */ (null)
+  );
 
   function calculatePay() {
     if (!hours.trim() || !hourlyRate.trim() || !taxRate.trim()) {
