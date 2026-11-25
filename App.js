@@ -18,9 +18,9 @@ export default function App() {
           screenOptions={({ navigation }) => ({
             drawerType: 'slide',
             headerStyle: styles.header,
-            headerTintColor: '#183153',
+            headerTintColor: '#000000',
             headerTitleStyle: styles.headerTitle,
-            drawerActiveTintColor: '#2463eb',
+            drawerActiveTintColor: '#dbbc56',
             headerLeft: () => (
               <Pressable
                 onPress={() => navigation.openDrawer()}
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
   },
   menuIcon: {
-    color: '#183153',
+    color: '#dbbc56',
     fontSize: 26,
   },
 });
